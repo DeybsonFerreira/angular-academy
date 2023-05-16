@@ -1,0 +1,13 @@
+.footer {
+    background-color: #343541;
+    color: #ffffff;
+    padding: 20px;
+    
+    /* Adicione as propriedades para posicionar o footer */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+  
