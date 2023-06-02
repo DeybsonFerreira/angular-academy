@@ -1,8 +1,4 @@
-<app-navbar></app-navbar>
-
-<button type="button" mat-button (click)="drawer.toggle()">
-    Toggle sidenav
-  </button>
+<app-navbar [Drawer]="drawer"></app-navbar>
 
 <mat-drawer-container class="example-container" autosize>
   <mat-drawer #drawer class="example-sidenav" mode="side">
