@@ -2,11 +2,11 @@ import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class SharedService {
-    private _username: BehaviorSubject<string> = new BehaviorSubject<string>('');
-  constructor() { }
+  private _username: BehaviorSubject<string> = new BehaviorSubject<string>('');
+  constructor() {}
 
   setUsername(username: string) {
     this._username.next(username);

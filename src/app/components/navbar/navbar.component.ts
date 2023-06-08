@@ -8,13 +8,14 @@ import { SharedService } from 'src/app/shared/shared.service';
 })
 export class NavbarComponent {
   @Input() Drawer: any;
-  usuarioLogado:string="";
+  usuarioLogado: string = '';
 
-  constructor(private shared:SharedService){
-    shared.getUsername().subscribe((retorno:string)=>{
-        this.usuarioLogado=retorno;
-    })
+  constructor(private shared: SharedService) {
+    this.shared.getUsername().subscribe((retorno: string) => {
+      this.usuarioLogado = retorno;
+    });
   }
+
   public showMenu() {
     this.Drawer.toggle();
   }

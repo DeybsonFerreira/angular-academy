@@ -3,7 +3,7 @@
     <mat-card>
         <mat-card-content>
             <!--formulario-->
-            <form class="login-form">
+            <form class="login-form" (ngSubmit)="btnLogin()">
                 <mat-form-field>
                     <input name="userApp" matInput placeholder="Usuário" [(ngModel)]="username">
                 </mat-form-field>
@@ -16,7 +16,7 @@
                     {{mensagemLogin}}
                 </span>
 
-                <button (click)="btnLogin()" mat-raised-button color="primary" type="submit">Entrar</button>
+                <button mat-raised-button color="primary" type="submit">Entrar</button>
             </form>
 
         </mat-card-content>
