@@ -1,0 +1,9 @@
+.container {
+  margin: 2%;
+}
+mat-card {
+  margin-top: 1%;
+}
+mat-card:hover {
+  background-color: whitesmoke;
+}

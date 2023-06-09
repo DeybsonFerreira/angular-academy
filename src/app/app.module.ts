@@ -19,6 +19,8 @@ import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './pages/login/login.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { AuthGuard } from './shared/auth-guard.service';
+import { UserComponent } from './pages/user/user.component';
+import {MatTableModule} from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -28,6 +30,7 @@ import { AuthGuard } from './shared/auth-guard.service';
     NavbarComponent,
     FooterComponent,
     LoginComponent,
+    UserComponent,
   ],
   imports: [
     BrowserModule,
@@ -42,6 +45,7 @@ import { AuthGuard } from './shared/auth-guard.service';
     MatInputModule,
     FormsModule,
     MatToolbarModule,
+    MatTableModule
   ],
   providers: [AuthGuard],
   bootstrap: [AppComponent],
