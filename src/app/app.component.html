@@ -5,12 +5,12 @@
         
     <!--Lista do menu-->
     <mat-list role="list">
-        <mat-list-item (click)="drawer.toggle()" routerLink="home" role="listitem">
+        <mat-list-item *ngIf="isAuth" (click)="drawer.toggle()" routerLink="home" role="listitem">
             <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
         <span>Home</span>
         </mat-list-item>
 
-        <mat-list-item (click)="drawer.toggle()" routerLink="contact" role="listitem">
+        <mat-list-item *ngIf="isAuth" (click)="drawer.toggle()" routerLink="contact" role="listitem">
             <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="sentiment_satisfied"></mat-icon>
         <span>Contact</span>
         </mat-list-item>

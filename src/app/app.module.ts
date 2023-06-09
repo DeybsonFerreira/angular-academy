@@ -18,6 +18,7 @@ import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './pages/login/login.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { AuthGuard } from './shared/auth-guard.service';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     FormsModule,
     MatToolbarModule,
   ],
-  providers: [],
+  providers: [AuthGuard],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

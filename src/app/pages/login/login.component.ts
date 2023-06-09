@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { SharedService } from 'src/app/shared/shared.service';
 
@@ -19,7 +19,7 @@ export class LoginComponent {
       //sucesso
       this.mensagemLogin = 'CORRETO !';
       this.shared.setUsername(this.username);
-     this.router.navigate(['home']);
+      this.router.navigate(['home']);
     } else {
       this.mensagemLogin = 'INCORRETO !';
     }
