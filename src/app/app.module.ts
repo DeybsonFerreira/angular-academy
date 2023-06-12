@@ -21,6 +21,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { AuthGuard } from './shared/auth-guard.service';
 import { UserComponent } from './pages/user/user.component';
 import {MatTableModule} from '@angular/material/table';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import {MatTableModule} from '@angular/material/table';
     MatInputModule,
     FormsModule,
     MatToolbarModule,
-    MatTableModule
+    MatTableModule,
+    HttpClientModule
   ],
   providers: [AuthGuard],
   bootstrap: [AppComponent],
